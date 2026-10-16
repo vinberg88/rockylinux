@@ -31,3 +31,11 @@ It is tailored for developers, system administrators, and DevOps engineers who n
 * **Free and Community-Driven:** Built by the community for the community, Rocky Linux is completely open-source and free, ensuring you have a secure and supported enterprise OS without licensing fees.
 
 Whether you are migrating from CentOS, developing enterprise software, or just prefer a rock-solid, RPM-based distribution for your daily command-line tasks, Rocky Linux on WSL bridges the gap between Windows convenience and Linux server reliability.
+
+---
+
+<p align="center">
+<a href="https://github.com/vinberg88/rockylinux/releases">
+<img width="631" height="156" alt="extrarocky" src="https://github.com/user-attachments/assets/3140c979-9d68-4d00-ae32-e1a5bcd6f388" />
+</p>
+
