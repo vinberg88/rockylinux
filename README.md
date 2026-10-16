@@ -1,6 +1,6 @@
 # Rocky Liunux for WSL. Build Desktop Via Windows 11.
 
-Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build KDE, Mate and GNOME. Maybe some more desktops.
+Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build KDE, Mate and GNOME.
 
 ---
 
