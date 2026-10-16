@@ -11,6 +11,13 @@ Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build K
 
 ---
 
+Commming SONE - KDE 6 AND ROCKY LINUX 10.
+
+<p align="center">
+<a href="https://github.com/vinberg88">
+<img width="1920" height="1080" alt="Rockylinux10-kde6" src="https://github.com/user-attachments/assets/a3cc7518-3e6f-4880-93bf-d0371407cfa2" />
+</p>
+
 **Rocky Linux for WSL** (Windows Subsystem for Linux) brings the stability and reliability of enterprise-grade Linux directly to your Windows desktop. Designed as a 100% bug-for-bug compatible drop-in replacement for Red Hat Enterprise Linux (RHEL), it allows you to run a robust, production-ready Linux environment natively on Windows without the overhead of a traditional virtual machine or a dual-boot setup.
 
 It is tailored for developers, system administrators, and DevOps engineers who need an accurate enterprise testing ground locally.
