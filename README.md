@@ -1,6 +1,15 @@
 # Rocky Liunux for WSL. Build Desktop Via Windows 11.
 
-Build Desktop for Rocky Linux and WSL. We post so you can build KDE, Mate and GNOME. Maybe some more desktop for Rocky LINUX.
+Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build KDE, Mate and GNOME. Maybe some more desktops.
+
+---
+
+<p align="center">
+<a href="https://github.com/vinberg88">
+<img width="705" height="150" alt="rockylinux" src="https://github.com/user-attachments/assets/9dca9605-038d-4d24-a71c-0135228cea95" />
+</p>
+
+---
 
 **Rocky Linux for WSL** (Windows Subsystem for Linux) brings the stability and reliability of enterprise-grade Linux directly to your Windows desktop. Designed as a 100% bug-for-bug compatible drop-in replacement for Red Hat Enterprise Linux (RHEL), it allows you to run a robust, production-ready Linux environment natively on Windows without the overhead of a traditional virtual machine or a dual-boot setup.
 
