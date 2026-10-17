@@ -1,4 +1,4 @@
-Rocky Linux 10 from CIQ and KDE 6 - Install KDE 6 via Windows 11 and Rocky Linux 10 - WSL2 - Youtube - 2026
+Rocky Linux 10 from CIQ and KDE 6 - Install KDE 6 via Windows 11 and Rocky Linux 10 - WSL - Youtube - 2026
 
 How to install KDE 6 via Rocky Linux 10 from CIQ - TEXT - for WSL2
 https://github.com/vinberg88/rockylinux/blob/main/RockyLinux.10-RLCPlus-KDE.txt
@@ -9,7 +9,7 @@ Comming Zone….
 
 Download Rocky Linux 10 from CIQ: https://github.com/vinberg88/rockylinux/releases
 
-Look for RLCPlus-10-WSL-10-x86_64.wsl and download and install now.
+Look for RLCPlus-10-WSL-10-x86_64.wsl and download and install.
 
 Or download and install via PowerShell: wsl --install RLCPlus-10 --name ROCKYLINUX-10
 
@@ -45,8 +45,7 @@ iiiiiliiliiiiii~             "4lili
            giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
           -^~$ililili@~~'
 
-
-About Rocky Linux 10 from CIQ for WSL
+About Rocky Linux 10 from CIQ for WSL and LINUX.
 
 https://ciq.com/products/rocky-linux/pro
 
@@ -94,11 +93,13 @@ sudo dnf install sudo -y
 sudo dnf install wget -y
 sudo dnf install nano -y
 
-------------------------------------------------------
+-----------------------------------------------
 
 Add this Repos to Rocky Linux 10 from CIQ. Rpmfusion and epel release latest and some other mirrors from Rocky Linux 10.
 
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+sudo dnf config-manager --set-enabled crb
+
+sudo dnf install epel-release
 sudo /usr/bin/crb enable
 
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
@@ -106,8 +107,25 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 sudo dnf install distribution-gpg-keys
 sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-el-$(rpm -E %rhel)
 sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-el-$(rpm -E %rhel)
-sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
-sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+sudo dnf --setopt=localpkg_gpgcheck=1 install  https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+
+------------------------------------------------------
+
+Paste in terminal - Update Rocky Linux 10 from CIQ - KDE 6 - 2026
+
+sudo dnf upgrade --refresh --allowerasing
+
+------------------------------------------------------
+
+Get kwin and tools for KDE 6 and Rocky Linux 10 from CIQ
+
+sudo dnf copr enable mlampe/kde_x11 rhel+epel-10-x86_64 -y
+
+sudo dnf upgrade --refresh
+
+sudo dnf install kwin-x11 plasma-workspace-x11 xsetroot
+
+sudo echo -e "DESKTOP=KDE\nPREFERRED=startplasma-x11" > sudo /etc/sysconfig/desktop
 
 ------------------------------------------------------
 
@@ -130,24 +148,6 @@ iiiiiliiliiiiii~             "4lili
             _gllilililiililii~ 
            giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
           -^~$ililili@~~'
-
-------------------------------------------------------
-
-Paste in terminal - Update Rocky Linux 10 from CIQ - KDE 6 - 2026
-
-sudo dnf upgrade --refresh --allowerasing
-
-------------------------------------------------------
-
-Get kwin and tools for KDE 6 and Rocky Linux 10 from CIQ
-
-sudo dnf copr enable mlampe/kde_x11 rhel+epel-10-x86_64 -y
-
-sudo dnf upgrade --refresh
-
-sudo dnf install kwin-x11 plasma-workspace-x11 xsetroot
-
-sudo echo -e "DESKTOP=KDE\nPREFERRED=startplasma-x11" > sudo /etc/sysconfig/desktop
 
 ------------------------------------------------------
 
@@ -360,7 +360,7 @@ Old way to start kDE 6: startplasma-x11
 
 ----------------------------------------------------------------
 
-❤ Thank you for being a part of the Rocky Linux from CIQ Plus 10 and KDE 6 for WSL2 ❤
+❤ Thank you for being a part of the Rocky Linux from CIQ Plus 10 and KDE 6 for WSL ❤
 
           __wgliliiligw_,     
        _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
@@ -383,6 +383,6 @@ iiiiiliiliiiiii~             "4lili
           -^~$ililili@~~'
                                       
 
-Regards Mattias Vinberg - Sweden - Linux - Micrsoft - KDE - Rockylinux - x410 - 2026
+Regards Mattias Vinberg - Sweden - Linux - Micrsoft - KDE - Rockylinux CIQ Plus 10 - x410 - 2026
 
 ----------------------------------------------------------------
