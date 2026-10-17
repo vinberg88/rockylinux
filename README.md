@@ -13,7 +13,7 @@ Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build K
 
 Rocky Linux 10 from CIQ and KDE 6 wia WSL.
 
-How to install KDE 6 via Rockylinux CIQ - https://github.com/vinberg88/rockylinux/blob/main/RockyLinux.10-RLCPlus-KDE.txt
+Install KDE 6 via Rockylinux - https://github.com/vinberg88/rockylinux/blob/main/RockyLinux.10-RLCPlus-KDE.txt
 
 Video from Youtube Comming SONE - Working on that NOW!
 
