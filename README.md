@@ -15,6 +15,16 @@ Commming SONE - KDE 6 AND ROCKY LINUX 10 VIA WSL and WINDOWS 11.
 
 <p align="center">
 <a href="https://github.com/vinberg88">
+<img width="1920" height="1080" alt="RockyLinux 10-RLCPlus-KDE" src="https://github.com/user-attachments/assets/44e75968-381a-4da4-a6df-cd61c5e6f797" />
+</p>
+
+
+---
+
+Commming SONE - KDE 6 AND ROCKY LINUX 10 VIA WSL and WINDOWS 11.
+
+<p align="center">
+<a href="https://github.com/vinberg88">
 <img width="1920" height="1080" alt="Rockylinux10-kde6" src="https://github.com/user-attachments/assets/a3cc7518-3e6f-4880-93bf-d0371407cfa2" />
 </p>
 
