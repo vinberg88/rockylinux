@@ -11,7 +11,7 @@ Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build K
 
 ---
 
-Commming SONE - KDE 6 AND ROCKY LINUX 10 VIA WSL and WINDOWS 11.
+Rocky Linux 10 from CIQ and KDE 6.
 
 <p align="center">
 <a href="https://github.com/vinberg88">
