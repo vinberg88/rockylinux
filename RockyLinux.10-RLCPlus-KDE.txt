@@ -1,0 +1,388 @@
+Rocky Linux 10 from CIQ and KDE 6 - Install KDE 6 via Windows 11 and Rocky Linux 10 - WSL2 - Youtube - 2026
+
+How to install KDE 6 via Rocky Linux 10 from CIQ - TEXT - for WSL2
+Comming Zone….
+
+How to install KDE 6 via Rocky Linux 10 from CIQ - MOVIE - for WSL2
+Comming Zone….
+
+
+Download Rocky Linux 10 from CIQ: https://github.com/vinberg88/rockylinux/releases
+
+Look for RLCPlus-10-WSL-10-x86_64.wsl and download and install now.
+
+Or download and install via PowerShell: wsl --install RLCPlus-10 --name ROCKYLINUX-10
+
+
+TOOLS THAT I USE FOR MICROSOFT AND Rocky Linux 10 from CI AND KDE 6 - 2026 - WSL
+
+X410 - Xserver for windows 11 - So you have a Desktop TO See in Windows 11.
+https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
+
+Raft WSL - Handel WSL image easy and Linux for WSL and Windows 11.
+https://apps.microsoft.com/detail/9msmjqd017x7?hl=en-US&gl=US
+
+WSL UI - This tool is free and works like Raft WSL.
+https://apps.microsoft.com/detail/9p8548knj2m9?hl=sv-SE&gl=SE
+
+          __wgliliiligw_,     
+       _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
+     _%iiiiiilililiiiiiiiiiii_    
+   .Qliiiililiiiiiiililililiilm.      Host: Windows Subsystem for Linux - RLCPlus-10 (3.0.3.0)
+  _iiiiiliiiiiililiiiiiiiiiiliil,
+ .lililiiilililiiiilililililiiiii,    Media: Mattias Vinberg - Stockholm / Sweden - 2026
+_liiiiiiliiiiiiiliiiiiF{iiiiiilili,  
+jliililiiilililiiili@`  ~ililiiiiiL   Rocky Linux from CIQ Plus 10 AND KDE 6 via WINDOWS 11 - WSL
+iiiliiiiliiiiiiili>`      ~liililii   
+liliiiliiilililii`         -9liiiil   OS: Windows 11 Pro for Workstations (26H2) x86_64
+iiiiiliiliiiiii~             "4lili   
+4ililiiiiilil~|      -w,       )4lf   Download Rocky Linux 10 from CIQ here: https://github.com/vinberg88/rockylinux
+-liiiiililiF'       _liig,       )'
+ )iiiliii@`       _QIililig,          Find More Stuff About WSL - https://github.com/vinberg88
+  )iiii>`       .Qliliiiililw
+   )<>~       .mliiiiiliiiiiil,       Kernel: Linux 6.18.54.1-microsoft-standard-WSL2
+            _gllilililiililii~ 
+           giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
+          -^~$ililili@~~'
+
+
+About Rocky Linux 10 from CIQ for WSL
+
+https://ciq.com/products/rocky-linux/pro
+
+RLC+ (Rocky Linux from CIQ) is a specialized, enhanced
+distribution of Rocky Linux designed to streamline 
+advanced infrastructure and high-performance computing 
+tasks. While community Rocky Linux provides a 100% 
+bug-for-bug compatible alternative to Red Hat
+Enterprise Linux (RHEL), RLC+ builds upon that Foundation
+by adding pre-integrated drivers and kernel optimizations.
+
+About KDE 6 - https://kde.org for Rocky Linux 10 from CIQ
+
+KDE Plasma is a modern, feature-rich desktop environment 
+for Linux-based operating systems. Known for its 
+sleek design, customizable interface, and extensive 
+set of applications, it is also open source, devoid of ads, and
+makes protecting your privacy and personal data a priority
+
+Find More Stuff for WSL here - https://github.com/vinberg88
+
+------------------------------------------------------
+
+Download Rocky Linux 10 from CIQ here: https://github.com/vinberg88/rockylinux/releases
+
+Look for RLCPlus-10-WSL-10-x86_64.wsl and press the BLUE Icon and install Rocky Linux 10
+
+Or download and install via PowerShell: wsl --install RLCPlus-10 --name ROCKYLINUX-10
+
+------------------------------------------------------
+
+Setup password for User and ROOT after install. Use same password for Root and User - Rocky Linux 10
+
+Change Adolf to your username for Rocky Linux 10
+
+sudo passwd adolf
+sudo passwd root
+
+------------------------------------------------------
+
+Time to start install of Rocky Linux 10 from CIQ and KDE 6 - Copy and paste =]
+
+sudo dnf install dnf-plugins-core -y
+sudo dnf install sudo -y
+sudo dnf install wget -y
+sudo dnf install nano -y
+
+------------------------------------------------------
+
+Add this Repos to Rocky Linux 10 from CIQ. Rpmfusion and epel release latest and some other mirrors from Rocky Linux 10.
+
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+sudo /usr/bin/crb enable
+
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
+
+sudo dnf install distribution-gpg-keys
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-el-$(rpm -E %rhel)
+sudo rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-el-$(rpm -E %rhel)
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
+sudo dnf --setopt=localpkg_gpgcheck=1 install https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+
+------------------------------------------------------
+
+          __wgliliiligw_,     
+       _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
+     _%iiiiiilililiiiiiiiiiii_    
+   .Qliiiililiiiiiiililililiilm.      Host: Windows Subsystem for Linux - RLCPlus-10 (3.0.3.0)
+  _iiiiiliiiiiililiiiiiiiiiiliil,
+ .lililiiilililiiiilililililiiiii,    Media: Mattias Vinberg - Stockholm / Sweden - 2026
+_liiiiiiliiiiiiiliiiiiF{iiiiiilili,  
+jliililiiilililiiili@`  ~ililiiiiiL   Rocky Linux from CIQ Plus 10 AND KDE 6 via WINDOWS 11 - WSL
+iiiliiiiliiiiiiili>`      ~liililii   
+liliiiliiilililii`         -9liiiil   OS: Windows 11 Pro for Workstations (26H2) x86_64
+iiiiiliiliiiiii~             "4lili   
+4ililiiiiilil~|      -w,       )4lf   Download Rocky Linux 10 from CIQ here: https://github.com/vinberg88/rockylinux
+-liiiiililiF'       _liig,       )'
+ )iiiliii@`       _QIililig,          Find More Stuff About WSL - https://github.com/vinberg88
+  )iiii>`       .Qliliiiililw
+   )<>~       .mliiiiiliiiiiil,       Kernel: Linux 6.18.54.1-microsoft-standard-WSL2
+            _gllilililiililii~ 
+           giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
+          -^~$ililili@~~'
+
+------------------------------------------------------
+
+Paste in terminal - Update Rocky Linux 10 from CIQ - KDE 6 - 2026
+
+sudo dnf upgrade --refresh --allowerasing
+
+------------------------------------------------------
+
+Get kwin and tools for KDE 6 and Rocky Linux 10 from CIQ
+
+sudo dnf copr enable mlampe/kde_x11 rhel+epel-10-x86_64 -y
+
+sudo dnf upgrade --refresh
+
+sudo dnf install kwin-x11 plasma-workspace-x11 xsetroot
+
+sudo echo -e "DESKTOP=KDE\nPREFERRED=startplasma-x11" > sudo /etc/sysconfig/desktop
+
+------------------------------------------------------
+
+Basic Programs för KDE 6 and Rocky Linux 10 from CIQ - Install all programs.
+
+sudo dnf install git systemd* wget curl bash pipx xorg net-tools dbus-x11 dbus* yum -y --skip-broken
+sudo dnf install kwin* xorg* -y --nobest --allowerasing --skip-broken
+sudo dnf install llvm -y
+sudo dnf install sddm* -y --allowerasing --skip-broken --nobest
+
+sudo dnf install dconf* nano  -y --allowerasing --skip-broken --nobest -y
+sudo dnf install librepo pip -y --allowerasing --skip-broken --nobest -y
+sudo dnf group install "System-Tools" --allowerasing --nobest --skip-broken -y
+
+------------------------------------------------------
+
+Install KDE 6 plasma for Rocky Linux 10 from CIQ
+
+sudo dnf -y group install kde-desktop-environment --allowerasing --skip-broken --nobest
+sudo dnf install kde* -y --skip-broken --nobest
+sudo dnf install plasma* -y --allowerasing --skip-broken --nobest
+sudo systemctl daemon-reload
+
+------------------------------------------------------
+
+Install qt5 / qt6 and ffmpeg for Rocky Linux from CIQ and KDE 6
+
+sudo dnf install qt6* qt5* ffmpeg* gtk* -y --allowerasing --nobest --skip-broken
+
+------------------------------------------------------
+
+Install Hyfetch - like Neofetch but more FUN for Rocky Linux from CIQ Plus and KDE 6
+
+pipx install hyfetch
+pipx ensurepath
+
+Put this in terminal to Test: hyfetch
+
+
+                                      Thank you for being a part of the Rocky Linux from CIQ Plus 10 and KDE 6
+          __wgliliiligw_,     
+       _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
+     _%iiiiiilililiiiiiiiiiii_    
+   .Qliiiililiiiiiiililililiilm.      Host: Windows Subsystem for Linux - RLCPlus-10 (3.0.3.0)
+  _iiiiiliiiiiililiiiiiiiiiiliil,
+ .lililiiilililiiiilililililiiiii,    Media: Mattias Vinberg - Stockholm / Sweden - 2026
+_liiiiiiliiiiiiiliiiiiF{iiiiiilili,  
+jliililiiilililiiili@`  ~ililiiiiiL   Rocky Linux from CIQ Plus 10 AND KDE 6 via WINDOWS 11 - WSL
+iiiliiiiliiiiiiili>`      ~liililii   
+liliiiliiilililii`         -9liiiil   OS: Windows 11 Pro for Workstations (26H2) x86_64
+iiiiiliiliiiiii~             "4lili   
+4ililiiiiilil~|      -w,       )4lf   Download Rocky Linux 10 from CIQ here: https://github.com/vinberg88/rockylinux
+-liiiiililiF'       _liig,       )'
+ )iiiliii@`       _QIililig,          Find More Stuff About WSL - https://github.com/vinberg88
+  )iiii>`       .Qliliiiililw
+   )<>~       .mliiiiiliiiiiil,       Kernel: Linux 6.18.54.1-microsoft-standard-WSL2
+            _gllilililiililii~ 
+           giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
+          -^~$ililili@~~'
+                                      
+------------------------------------------------------
+
+Install google-chrome - paste in terminal - Rocky Linux 10 from CIQ AND KDE 6.
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo yum install ./google-chrome-stable_current_*.rpm -y
+sudo yum update google-chrome-stable
+
+------------------------------------------------------
+
+Install CODE Visual studio code - 2026 - Microsoft - Rocky Linux 10 from CIQ
+
+wget https://www.knulla.org/scripts/code-1.95.3-1731513157.el8.x86_64.rpm
+sudo dnf install ./code-1.95.3-1731513157.el8.x86_64.rpm -y
+
+------------------------------------------------------
+
+Listen to sounds -- Blanket -- Rocky Linux 10 from CIQ -- KDE 6 -- 2026
+
+wget https://www.swehub.com/blanket/blanket-0.8.0-1.noarch.rpm
+sudo dnf install ./blanket-0.8.0-1.noarch.rpm -y
+
+------------------------------------------------------
+
+Install LibreOffice for Rocky Linux 10 from CIQ via flatpak.
+
+sudo dnf install flatpak* -y --skip-broken --nobest
+
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+sudo flatpak install flathub org.libreoffice.LibreOffice
+
+------------------------------------------------------
+
+Gimp for AlmaLinux 10 KITTY - ITS A MUST TO HAVE FOR Rocky Linux 10 from CIQ
+
+sudo dnf copr enable jridky/gimp10 rhel-10-x86_64 -y
+sudo dnf install gimp -y
+
+------------------------------------------------------
+
+Copy and Paste in terminal for Rocky Linux 10 from CIQ
+
+xdg-user-dirs-update
+sudo systemctl set-default graphical.target
+sudo ln -fs /usr/lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+------------------------------------------------------
+
+Paste this one time in Console - Rocky Linux 10 from CIQ
+
+sudo mkdir /run/user/1000 && sudo chmod 700 /run/user/1000 && sudo chown $(whoami): /run/user/1000
+
+------------------------------------------------------
+
+COPY AND PASTE FROM TERMINAL - Rocky Linux 10 from CIQ
+
+Type this in terminal and put your user there - sudo loginctl enable-linger adolf
+
+------------------------------------------------------
+
+Install some more programs for KDE 6 and Rocky Linux 10 from CIQ
+
+sudo dnf install dconf-editor curl wget git bash* zeal* librepo* -y
+
+------------------------------------------------------
+
+          __wgliliiligw_,     
+       _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
+     _%iiiiiilililiiiiiiiiiii_    
+   .Qliiiililiiiiiiililililiilm.      Host: Windows Subsystem for Linux - RLCPlus-10 (3.0.3.0)
+  _iiiiiliiiiiililiiiiiiiiiiliil,
+ .lililiiilililiiiilililililiiiii,    Media: Mattias Vinberg - Stockholm / Sweden - 2026
+_liiiiiiliiiiiiiliiiiiF{iiiiiilili,  
+jliililiiilililiiili@`  ~ililiiiiiL   Rocky Linux from CIQ Plus 10 AND KDE 6 via WINDOWS 11 - WSL
+iiiliiiiliiiiiiili>`      ~liililii   
+liliiiliiilililii`         -9liiiil   OS: Windows 11 Pro for Workstations (26H2) x86_64
+iiiiiliiliiiiii~             "4lili   
+4ililiiiiilil~|      -w,       )4lf   Download Rocky Linux 10 from CIQ here: https://github.com/vinberg88/rockylinux
+-liiiiililiF'       _liig,       )'
+ )iiiliii@`       _QIililig,          Find More Stuff About WSL - https://github.com/vinberg88
+  )iiii>`       .Qliliiiililw
+   )<>~       .mliiiiiliiiiiil,       Kernel: Linux 6.18.54.1-microsoft-standard-WSL2
+            _gllilililiililii~ 
+           giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
+          -^~$ililili@~~'
+
+------------------------------------------------------
+
+Fix IP problem for X410. Cant find screen problem - Rocky Linux 10 from CIQ
+
+OPEN POWERSHELL FROM MICROSOFT AND TYPE: ipconfig
+
+NOTE - Importent to look for ip. Last lines are IP-numbers for WSL
+
+SAVE IP HERE FOR WSL FROM POWERSHELL: 172.30.16.1
+
+NOW GO BACK TO Rocky Linux 10 Terminal and paste this.
+
+sudo systemctl unmask systemd-resolved.service
+sudo systemctl enable systemd-resolved.service
+
+sudo ls -l /etc/resolv.conf
+sudo mv /etc/resolv.conf /tmp/resolv.conf.bak
+sudo nano /etc/resolv.conf
+
+nameserver 172.30.16.1 <-- put your ip here and add nameserver.
+
+sudo chattr +i /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo cat /etc/resolv.conf
+
+DONE - alot of problem fixed for Rocky Linux 10 from CIQ
+
+------------------------------------------------------
+
+Install this for KDE 6 AND Rocky Linux 10 from CIQ - fix so startplasma-x11 work.
+
+sudo dnf -y install rpm-build rpmdevtools
+
+grep -R --line-number -E '^\s*%dist' ~/.rpmmacros /etc/rpm/macros* 2>/dev/null || true
+
+wget https://www.swehub.com/rocky/plasma-wsl-starter-1.3.0-1.el10.noarch.rpm
+sudo dnf -y install ./plasma-wsl-starter-1.3.0-1.el10.noarch.rpm
+
+------------------------------------------------------
+
+Restart Rocky Linux CIQ - Restart Rocky Linux 10 from CIQ - Restart Rocky Linux 10 from CIQ
+
+------------------------------------------------------
+
+        Time to start KDE 6 and Rocky Linux from CIQ Plus 10.
+
+
+NOTE - FIRST START X410 THEN YOU START Rocky Linux 10 VIA TERMINAL.
+
+
+Copy and paste in Terminal: export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+
+Copy and paste in Terminal: start-plasma-x11-wsl --fix-deps --disable-akonadi
+
+
+        IT TAKE SOME TIME TO START FIRST ROUND - JUST WAIT.
+
+----------------------------------------------------------------
+
+ONLY USE THIS IF I WONT START.. BUT IT WILL WORK =]
+
+Old way to start kDE 6: startplasma-x11
+
+----------------------------------------------------------------
+
+❤ Thank you for being a part of the Rocky Linux from CIQ Plus 10 and KDE 6 for WSL2 ❤
+
+          __wgliliiligw_,     
+       _williiiiiiliilililw,          OS: Rocky Linux from CIQ Plus 10.2 (Red Quartz) x86_64
+     _%iiiiiilililiiiiiiiiiii_    
+   .Qliiiililiiiiiiililililiilm.      Host: Windows Subsystem for Linux - RLCPlus-10 (3.0.3.0)
+  _iiiiiliiiiiililiiiiiiiiiiliil,
+ .lililiiilililiiiilililililiiiii,    Media: Mattias Vinberg - Stockholm / Sweden - 2026
+_liiiiiiliiiiiiiliiiiiF{iiiiiilili,  
+jliililiiilililiiili@`  ~ililiiiiiL   Rocky Linux from CIQ Plus 10 AND KDE 6 via WINDOWS 11 - WSL
+iiiliiiiliiiiiiili>`      ~liililii   
+liliiiliiilililii`         -9liiiil   OS: Windows 11 Pro for Workstations (26H2) x86_64
+iiiiiliiliiiiii~             "4lili   
+4ililiiiiilil~|      -w,       )4lf   Download Rocky Linux from CIQ here: https://github.com/vinberg88/rockylinux
+-liiiiililiF'       _liig,       )'
+ )iiiliii@`       _QIililig,          Find More Stuff About WSL - https://github.com/vinberg88
+  )iiii>`       .Qliliiiililw
+   )<>~       .mliiiiiliiiiiil,       Kernel: Linux 6.18.54.1-microsoft-standard-WSL2
+            _gllilililiililii~ 
+           giliiiiiiiiiiiiT`          Mail: mattiasvinberg@duck.com
+          -^~$ililili@~~'
+                                      
+
+Regards Mattias Vinberg - Sweden - Linux - Micrsoft - KDE - Rockylinux - x410 - 2026
+
+----------------------------------------------------------------
