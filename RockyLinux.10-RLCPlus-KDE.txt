@@ -1,7 +1,7 @@
 Rocky Linux 10 from CIQ and KDE 6 - Install KDE 6 via Windows 11 and Rocky Linux 10 - WSL2 - Youtube - 2026
 
 How to install KDE 6 via Rocky Linux 10 from CIQ - TEXT - for WSL2
-Comming Zone….
+https://github.com/vinberg88/rockylinux/blob/main/RockyLinux.10-RLCPlus-KDE.txt
 
 How to install KDE 6 via Rocky Linux 10 from CIQ - MOVIE - for WSL2
 Comming Zone….
