@@ -5,7 +5,7 @@ Build Desktop for Rocky Linux and WSL and Windows 11. We post so you can build K
 ---
 
 <p align="center">
-<a href="https://github.com/vinberg88">
+<a href="https://github.com/vinberg88/rockylinux/releases">
 <img width="705" height="150" alt="rockylinux" src="https://github.com/user-attachments/assets/9dca9605-038d-4d24-a71c-0135228cea95" />
 </p>
 
